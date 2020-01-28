@@ -36,8 +36,7 @@ def get_sentence_embedding(sentences):
         Numpy array of dimension (m,n) where m is the number of sentences in input, and n is the embedding dimension.
  
     """
-    sentence_embedding = embed(sentences)
-    return np.array(sentence_embedding)
+    return np.array(embed(sentences))
 
 #get embeddings from URL
 embeddings = get_sentence_embedding(sentences_)
