@@ -1,5 +1,3 @@
-#!pip install "tensorflow_hub>=0.6.0"
-#!pip install "tensorflow>=2.0.0"
 import tensorflow as tf
 import tensorflow_hub as hub
 import numpy as np
