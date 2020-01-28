@@ -1,10 +1,9 @@
 import tensorflow as tf
 import tensorflow_hub as hub
 import numpy as np
-import sys
-import argparse
 
-embedding_size = 20 #set embedding size/dimension (20/50/128/250/512/512t)
+#set embedding size(20/50/128/250/512/512t) 
+embedding_size = 128
 
 #get input sentences/read from file into list
 sentences_= ["Universal Sentence Encoder embeddings also support short paragraphs.",
@@ -44,5 +43,6 @@ def get_sentence_embedding(sentences):
 embeddings = get_sentence_embedding(sentences_)
 
 print("Shape of output/embeddings array", embeddings.shape)
+
 # for sent_emb in embeddings:
 #     print(sent_emb)
