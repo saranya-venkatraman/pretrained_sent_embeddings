@@ -19,7 +19,7 @@ Output = array of shape (2,n) #m=number of sentences, n=embedding dimension
 Run `pip3 install -r requirements.txt` (Python 3)
 
 ## Can't find the embedding dimension/model you need?
-Add the required models's URL [available here](https://tfhub.dev/s?module-type=text-embedding&subtype=module,placeholder) to **[dictionary here.](https://github.com/saranya132/pretrained_sent_embeddings/blob/832e609920d58e614a5342221d0406bd6995dc0e/get_embeddings.py#L13-L21)**
+Add the required model's URL [available here](https://tfhub.dev/s?module-type=text-embedding&subtype=module,placeholder) to **[dictionary here.](https://github.com/saranya132/pretrained_sent_embeddings/blob/832e609920d58e614a5342221d0406bd6995dc0e/get_embeddings.py#L13-L21)**
 
 ### Note 
 1. Create a **key** for new dictionary **values (URLs)** with the format "embed_**_size/modelName_**_model_url".
