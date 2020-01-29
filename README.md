@@ -16,7 +16,8 @@ Output = array of shape (2,n) #m=number of sentences, n=embedding dimension
 
 
 ## Installation and Use
-Run `pip3 install -r requirements.txt` (Python 3)
+Run `pip3 install -r requirements.txt`
+
 Run `python3 get_embeddings.py`
 
 ## Can't find the embedding dimension/model you need?
