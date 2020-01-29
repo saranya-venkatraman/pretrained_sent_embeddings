@@ -3,7 +3,7 @@ import tensorflow_hub as hub
 import numpy as np
 
 #set embedding size(20/50/128/250/512/512t) 
-embedding_size = 128
+EMBEDDING_SIZE = 128
 
 #get input sentences/read from file into list
 sentences_= ["Universal Sentence Encoder embeddings also support short paragraphs.",
@@ -21,7 +21,7 @@ models_dict = {
 }
 
 #get URL according to embedding size
-model_url = 'embed_{}_model_url'.format(embedding_size)
+model_url = 'embed_{}_model_url'.format(EMBEDDING_SIZE)
 
 #load pre-trained embeddings
 embed = hub.load(models_dict[model_url])
