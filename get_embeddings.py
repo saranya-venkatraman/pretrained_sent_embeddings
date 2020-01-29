@@ -23,7 +23,7 @@ models_dict = {
 #get URL according to embedding size
 model_url = 'embed_{}_model_url'.format(EMBEDDING_SIZE)
 
-#load pre-trained embeddings
+#load model
 embed = hub.load(models_dict[model_url])
 
 def get_sentence_embedding(sentences):
@@ -38,7 +38,7 @@ def get_sentence_embedding(sentences):
     """
     return np.array(embed(sentences))
 
-#get embeddings from URL
+#get embeddings from loaded model
 embeddings = get_sentence_embedding(sentences_)
 
 print("Shape of output/embeddings array", embeddings.shape)
