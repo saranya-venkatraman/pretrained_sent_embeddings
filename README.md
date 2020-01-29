@@ -11,7 +11,7 @@ Input = ["Colorless green ideas sleep furiously.", \
 	"Noam Chomsky offered this as an example of a grammatically valid, \
 	semantically nonsensical sentence."]
 				
-Output = array of shape (2,n) #m=number of sentences, n=embedding dimension
+Output = array of shape (m,n) #m=number of sentences(=2), n=EMBEDDING_SIZE
 ``` 
 
 
